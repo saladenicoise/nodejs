@@ -1,13 +1,24 @@
 {
-  "name": "nodejs-app",
+  "name": "data-demon",
   "version": "1.0.0",
-  "description": "A minimal Node.js web application.",
-  "main": "index.js",
-  "author": "alphasec",
-  "license": "MIT",
-   "dependencies": {
-  },
+  "description": "The Data Retrieval Service",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "jest --verbose --coverage --forceExit",
+    "live-reload": "nodemon server.js",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "redis": "^4.6.5",
+    "console-stamp": "^3.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }
